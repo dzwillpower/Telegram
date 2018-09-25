@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "23005116148",
+    "firebase_url": "https://dzwillpower.firebaseio.com",
+    "project_id": "dzwillpower",
+    "storage_bucket": "dzwillpower.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23005116148:android:0656e3436c3c9cdf",
+        "android_client_info": {
+          "package_name": "com.mytelegram.cn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23005116148-9rl8c0mpe6sk7p5pcbfg4rnpmknk8m9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaFeFVOiKwSS2QIDDsrJOaC9V99IeRI8g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

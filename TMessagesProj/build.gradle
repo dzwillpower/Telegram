@@ -35,7 +35,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion '28.0.2'
 
-    defaultConfig.applicationId = "org.telegram.messenger"
+    defaultConfig.applicationId = "com.mytelegram.cn"
 
     sourceSets.main.jniLibs.srcDirs = ['./jni/']
 
@@ -59,7 +59,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    signingConfigs {
+    /*signingConfigs {
         debug {
             storeFile file("config/release.keystore")
             storePassword RELEASE_STORE_PASSWORD
@@ -99,7 +99,7 @@ android {
             jniDebuggable false
             signingConfig signingConfigs.release
         }
-    }
+    }*/
 
     defaultConfig.versionCode = 1358
 
@@ -111,9 +111,9 @@ android {
         manifest.srcFile 'config/release/AndroidManifest.xml'
     }
 
-    sourceSets.foss {
-        manifest.srcFile 'config/foss/AndroidManifest.xml'
-    }
+//    sourceSets.foss {
+//        manifest.srcFile 'config/foss/AndroidManifest.xml'
+//    }
 
     flavorDimensions "minApi"
 
@@ -245,7 +245,7 @@ android {
         externalNativeBuild {
             ndkBuild {
                 arguments "NDK_APPLICATION_MK:=jni/Application.mk", "APP_PLATFORM:=android-16", "-j8"
-                abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+                abiFilters "arm64-v8a"
             }
         }
     }
